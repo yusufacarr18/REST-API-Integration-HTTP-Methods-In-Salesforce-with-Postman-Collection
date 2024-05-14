@@ -26,7 +26,7 @@ GET method is a frequently used method in the HTTP protocol. Its function is to 
 
 •	Get method can be called many times.
 
-[![ApexGet](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexGetMethod.png)]
+![ApexGet](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexGetMethod.png)
 
 •	For successful GET method transactions We return a response body containing account information and the “200 OK” Response Code.
 
