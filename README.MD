@@ -85,7 +85,7 @@ The HTTP POST method is an HTTP method that a client uses to send data to a serv
 
 ## HTTP PATCH Method
 
- ![HTTP_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPatchHMethod.png)
+ ![HTTP_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPatchMethod.png)
  
 •	The HTTP PATCH request method updates the fields of the record it represents in the request sent. It does not make any changes to other fields that are not sent.
 
