@@ -4,6 +4,8 @@
 
 . While doing these, we will learn structures such as JSON, request, response, body on Postman and run our tests with the opportunities Postman provides us.
 
+
+
 ## Understanding the Data Model
 
 ![DataModel](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/UnderstandingDataModel.png)
@@ -11,6 +13,7 @@
 The data model of our work is like this. We see the areas of the Event and Participant objects, fields and their relationship with each other in the visual.
 
 In this study, we will only deal with the Event object.
+
 
 
 
@@ -34,6 +37,9 @@ GET method is a frequently used method in the HTTP protocol. Its function is to 
 
 •	For unsuccessful GET method transactions We return the “404 Not Found” Response Code and error message in the response body.
 
+
+
+
 ## HTTP POST Method
 
  ![Postman_POST](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Post.gif)
@@ -53,6 +59,8 @@ The HTTP POST method is an HTTP method that a client uses to send data to a serv
 •	For successful POST method transactions, We return a response body containing account information and the “201 Created” Response Code.
 
 •	For unsuccessful POST method transactions, We return the “400 Bad Request” and “500 Internal Server Error” Response Code and error message in the response body.
+
+
 
 
 ## HTTP PUT Method
@@ -85,7 +93,7 @@ The HTTP POST method is an HTTP method that a client uses to send data to a serv
 
   ![APEX_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPatchMethod.png)
 
-  ![APEX_RESPONSE](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexResponsehMethod.png)
+  ![APEX_RESPONSE](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexResponseMethod.png)
 
 •	For successful PATCH method transactions, We return a response text with no response body and only the "204 No Content" Response Code.
 
