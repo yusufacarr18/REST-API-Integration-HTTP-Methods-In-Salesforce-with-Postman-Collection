@@ -1,4 +1,5 @@
 # REST API work, HTTP methods, Postman Collection and Salesforce 
+
 . With this study, we will learn the REST API working principle, a postman collection that we created by learning HTTP methods, and how these methods work by creating records on Salesforce and updating existing records.
 . While doing these, we will learn structures such as JSON, request, response, body on Postman and run our tests with the opportunities Postman provides us.
 
