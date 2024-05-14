@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "ac44e4aa-4db6-4ad8-adf5-0dab6e62dba1",
+		"name": "Event-Meeting Management Collection 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21210454"
+	},
+	"item": [
+		{
+			"name": "Fetch Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Get response\r",
+							"var responseData = pm.response.json();\r",
+							"\r",
+							"//Set environment variable\r",
+							"pm.collectionVariables.set(\"authToken\", responseData.access_token);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/services/oauth2/token?grant_type=password&client_id={{clientId}}&client_secret={{clientSecret}}&username={{username}}&password={{password}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"services",
+						"oauth2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Event Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"After the request.\")\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"Before the Request.\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/services/apexrest/v2/event-meetings/:recordId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"v2",
+						"event-meetings",
+						":recordId"
+					],
+					"variable": [
+						{
+							"key": "recordId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Event Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"After the request.\")\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"Before the Request.\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EventStartTime__c\": \"2025-10-08T21:00:00\",\r\n  \"EventEndTime__c\": \"\",\r\n  \"EventType__c\": \"Concert\",\r\n  \"Name\" : \"The Weeknd\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/services/apexrest/v2/event-meetings/:recordId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"v2",
+						"event-meetings",
+						":recordId"
+					],
+					"variable": [
+						{
+							"key": "recordId",
+							"value": "a0FJ70000008gkNMAQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Event Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"After the request.\")\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"Before the Request.\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EventStartTime__c\": \"2026-10-08T18:00:00\",\r\n  \"EventType__c\": \"Concert\",\r\n  \"Name\" : \"The Weeknd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/services/apexrest/v2/event-meetings/:recordId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"v2",
+						"event-meetings",
+						":recordId"
+					],
+					"variable": [
+						{
+							"key": "recordId",
+							"value": "a0FJ70000008gkNMAQ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Event Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"After the API Called.\")\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"\r",
+							"console.log(jsonData)\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//Console message\r",
+							"console.log(\"Before the API Called.\")   "
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{authToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"The Weeknd\",\r\n    \"Eventtype__c\":\"Concert\",\r\n    \"EventstartTime__c\": null,\r\n    \"EventendTime__c\":null,\r\n    \"City__c\" :\"Brisbane\",\r\n    \"Venue__c\":\"Suncorp Stadium\"\r\n\r\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/services/apexrest/v2/event-meetings",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"v2",
+						"event-meetings"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "Org Url",
+			"type": "string"
+		},
+		{
+			"key": "authToken",
+			"value": "Token",
+			"type": "string"
+		},
+		{
+			"key": "clientId",
+			"value": "Salesforce Client Id",
+			"type": "string"
+		},
+		{
+			"key": "clientSecret",
+			"value": "Salesforce Client Secret",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "Your Password + Security Token",
+			"type": "string"
+		},
+		{
+			"key": "username",
+			"value": "Your Username",
+			"type": "string"
+		}
+	]
+}
