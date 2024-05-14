@@ -24,7 +24,7 @@ GET method is a frequently used method in the HTTP protocol. Its function is to 
 •	For successful GET method transactions We return a response body containing account information and the “200 OK” Response Code.
 •	For unsuccessful GET method transactions We return the “404 Not Found” Response Code and error message in the response body.
 
-HTTP POST Method
+## HTTP POST Method
  
 Creating a New Record with Rest Integration in Salesforce
 
@@ -33,7 +33,7 @@ Creating a New Record with Rest Integration in Salesforce
 •	For unsuccessful POST method transactions, We return the “400 Bad Request” and “500 Internal Server Error” Response Code and error message in the response body.
 
 
-HTTP PUT Method
+## HTTP PUT Method
 •	The HTTP PUT request method usually replaces the record it represents with the request it sends
 •	According to the scenario, if the record it represents does not exist, it also performs the CREATE operation and continues its function as UPSERT.
 •	Sent fields are updated, unsent fields are set to null and the entire record is renewed with the request body.
@@ -45,7 +45,7 @@ HTTP PUT Method
 
 
 
-HTTP PATCH Method
+## HTTP PATCH Method
  
 •	The HTTP PATCH request method updates the fields of the record it represents in the request sent. It does not make any changes to other fields that are not sent.
 •	HTTP PATCH method is used only for UPDATE operation. 
