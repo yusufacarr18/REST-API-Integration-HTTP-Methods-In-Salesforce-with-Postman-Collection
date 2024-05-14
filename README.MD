@@ -38,7 +38,15 @@ GET method is a frequently used method in the HTTP protocol. Its function is to 
 
  ![Postman_POST](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Post.gif)
 
-Creating a New Record with Rest Integration in Salesforce
+The HTTP POST method is an HTTP method that a client uses to send data to a server. This method is typically used to pass user-supplied data to a server via a web form, but can also be used to send data via APIs.
+
+• Posting a message to a bulletin board, newsgroup, mailing list.
+
+• Adding a new user through a signup modal.
+
+• Extending a database through an append operation.
+
+• Providing a block of data, such as the result of submitting a form, to a data-handling process.
 
   ![APEX_POST](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPostMethod.png)
 
@@ -49,7 +57,7 @@ Creating a New Record with Rest Integration in Salesforce
 
 ## HTTP PUT Method
 
- ![HTTP_PUT](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPUTMethod.png)
+ ![HTTP_PUT](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPutMethod.png)
 
 •	The HTTP PUT request method usually replaces the record it represents with the request it sends
 
@@ -69,7 +77,7 @@ Creating a New Record with Rest Integration in Salesforce
 
 ## HTTP PATCH Method
 
- ![HTTP_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPATCHMethod.png)
+ ![HTTP_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPatchHMethod.png)
  
 •	The HTTP PATCH request method updates the fields of the record it represents in the request sent. It does not make any changes to other fields that are not sent.
 
