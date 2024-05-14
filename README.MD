@@ -2,7 +2,7 @@
 . With this study, we will learn the REST API working principle, a postman collection that we created by learning HTTP methods, and how these methods work by creating records on Salesforce and updating existing records.
 . While doing these, we will learn structures such as JSON, request, response, body on Postman and run our tests with the opportunities Postman provides us.
 
-Understanding the Data Model
+## Understanding the Data Model
  
 The data model of our work is like this. We see the areas of the Event and Participant objects, fields and their relationship with each other in the visual.
 In this study, we will only deal with the Event object.
