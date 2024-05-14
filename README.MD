@@ -9,7 +9,7 @@ In this study, we will only deal with the Event object.
 
 
 
-HTTP GET Method
+## HTTP GET Method
  
 Retrieving Records with Http Get Method in Postman Tool
 
