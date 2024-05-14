@@ -5,6 +5,8 @@
 . While doing these, we will learn structures such as JSON, request, response, body on Postman and run our tests with the opportunities Postman provides us.
 
 ## Understanding the Data Model
+
+![DataModel](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/UnderstandingDataModel.png)
  
 The data model of our work is like this. We see the areas of the Event and Participant objects, fields and their relationship with each other in the visual.
 
@@ -13,8 +15,8 @@ In this study, we will only deal with the Event object.
 
 
 ## HTTP GET Method
- 
-Retrieving Records with Http Get Method in Postman Tool
+
+![Postman_Get](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Get.gif)
 
 GET method is a frequently used method in the HTTP protocol. Its function is to retrieve a specified resource. A GET request is generally used to retrieve data from the server and does not contain a request body. Instead, a URI (Uniform Resource Identifier) is sent that identifies the requested resource.
 
@@ -33,10 +35,13 @@ GET method is a frequently used method in the HTTP protocol. Its function is to 
 •	For unsuccessful GET method transactions We return the “404 Not Found” Response Code and error message in the response body.
 
 ## HTTP POST Method
- 
+
+ ![Postman_POST](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Post.gif)
+
 Creating a New Record with Rest Integration in Salesforce
 
- 
+  ![APEX_POST](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPostMethod.png)
+
 •	For successful POST method transactions, We return a response body containing account information and the “201 Created” Response Code.
 
 •	For unsuccessful POST method transactions, We return the “400 Bad Request” and “500 Internal Server Error” Response Code and error message in the response body.
@@ -44,12 +49,15 @@ Creating a New Record with Rest Integration in Salesforce
 
 ## HTTP PUT Method
 
+ ![HTTP_PUT](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPUTMethod.png)
+
 •	The HTTP PUT request method usually replaces the record it represents with the request it sends
 
 •	According to the scenario, if the record it represents does not exist, it also performs the CREATE operation and continues its function as UPSERT.
 
 •	Sent fields are updated, unsent fields are set to null and the entire record is renewed with the request body.
 
+  ![APEX_PUT](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPutMethod.png)
 
 •	For successful PUT method transactions, We return a response text with no response body and only the "204 No Content" Response Code.
 
@@ -60,17 +68,23 @@ Creating a New Record with Rest Integration in Salesforce
 
 
 ## HTTP PATCH Method
+
+ ![HTTP_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/HTTPPATCHMethod.png)
  
 •	The HTTP PATCH request method updates the fields of the record it represents in the request sent. It does not make any changes to other fields that are not sent.
 
 •	HTTP PATCH method is used only for UPDATE operation. 
 
+  ![APEX_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPatchMethod.png)
+
+  ![APEX_RESPONSE](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexResponsehMethod.png)
 
 •	For successful PATCH method transactions, We return a response text with no response body and only the "204 No Content" Response Code.
 
 •	For unsuccessful PATCH method transactions, We return the "404 Not Found", "400 Bad Request" and "500 Internal Server Error" Response Code and error message in the response body.
 
- 
+
+
 
 
  
