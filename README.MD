@@ -1,4 +1,4 @@
-# REST API Work, HTTP Methods, Testing in Salesforce Environment with Postman Collection 
+# RESTful APIs: Implementing HTTP Methods in Salesforce and Testing with Postman Collection 
 
 . With this study, we will learn the REST API working principle, a postman collection that we created by learning HTTP methods, and how these methods work by creating records on Salesforce and updating existing records.
 
@@ -18,7 +18,7 @@ In this study, we will only deal with the Event object.
 
 
 ## HTTP GET Method
-
+### HTTP GET Method 2
 ![Postman_Get](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Get.gif)
 
 GET method is a frequently used method in the HTTP protocol. Its function is to retrieve a specified resource. A GET request is generally used to retrieve data from the server and does not contain a request body. Instead, a URI (Uniform Resource Identifier) is sent that identifies the requested resource.
