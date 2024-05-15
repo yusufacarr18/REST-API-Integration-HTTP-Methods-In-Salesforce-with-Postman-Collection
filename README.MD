@@ -1,4 +1,4 @@
-![ApiImage](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApiImage.jpg)
+![ApiImage](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Api-Image.jpg)
 
 
 # RESTful APIs: Implementing HTTP Methods in Salesforce and Testing with Postman Collection 
