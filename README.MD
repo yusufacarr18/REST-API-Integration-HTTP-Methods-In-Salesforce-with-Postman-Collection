@@ -1,7 +1,7 @@
 ![ApiImage](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApiImage.jpg)
 
 
-# RESTful APIs: Implementing HTTP Methods in Salesforce and Testing with Postman Collection 
+# RESTful APIs: Implementing HTTP Methods in Salesforce and Testing with Postman Collection  1
 
 . With this study, we will learn the **REST API** working principle, a postman collection that we created by learning **HTTP** methods, and how these methods work by creating records on Salesforce and updating existing records.
 
