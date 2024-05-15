@@ -18,7 +18,6 @@ In this study, we will only deal with the Event object.
 
 
 ## HTTP GET Method
-### HTTP GET Method 2
 ![Postman_Get](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Get.gif)
 
 GET method is a frequently used method in the HTTP protocol. Its function is to retrieve a specified resource. A GET request is generally used to retrieve data from the server and does not contain a request body. Instead, a URI (Uniform Resource Identifier) is sent that identifies the requested resource.
@@ -32,6 +31,8 @@ GET method is a frequently used method in the HTTP protocol. Its function is to 
 •	Get method can be called many times.
 
 ![ApexGet](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexGetMethod.png)
+
+### Response Codes:
 
 •	For successful GET method transactions We return a response body containing account information and the “200 OK” Response Code.
 
@@ -56,6 +57,8 @@ The HTTP POST method is an HTTP method that a client uses to send data to a serv
 
   ![APEX_POST](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPostMethod.png)
 
+### Response Codes:
+
 •	For successful POST method transactions, We return a response body containing account information and the “201 Created” Response Code.
 
 •	For unsuccessful POST method transactions, We return the “400 Bad Request” and “500 Internal Server Error” Response Code and error message in the response body.
@@ -74,6 +77,8 @@ The HTTP POST method is an HTTP method that a client uses to send data to a serv
 •	Sent fields are updated, unsent fields are set to null and the entire record is renewed with the request body.
 
   ![APEX_PUT](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPutMethod.png)
+
+### Response Codes:
 
 •	For successful PUT method transactions, We return a response text with no response body and only the "204 No Content" Response Code.
 
@@ -94,6 +99,8 @@ The HTTP POST method is an HTTP method that a client uses to send data to a serv
   ![APEX_PATCH](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexPatchMethod.png)
 
   ![APEX_RESPONSE](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/ApexResponseMethod.png)
+
+### Response Codes:
 
 •	For successful PATCH method transactions, We return a response text with no response body and only the "204 No Content" Response Code.
 
