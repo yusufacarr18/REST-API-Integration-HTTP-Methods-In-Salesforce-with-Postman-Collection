@@ -80,7 +80,7 @@ The **HTTP POST** method is an **HTTP** method that a client uses to send data t
 
 ### Response Codes:
 
-•	For successful **PUT** method transactions, We return a response text with no response body and only the "204 No Content" Response Code.
+•	For successful **PUT** method transactions, We return a response text with no response body and only the "**204 No Content**" Response Code.
 
 •	For unsuccessful **PUT** method transactions, We return the "**404 Not Found**", "**400 Bad Request**" and "**500 Internal Server Error**" Response Code and error message in the response body.
 
