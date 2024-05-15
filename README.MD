@@ -20,7 +20,7 @@ In this study, we will only deal with the Event object.
 ## HTTP GET Method
 ![Postman_Get](https://github.com/yusufacarr18/REST-API-Integration-HTTP-Methods-In-Salesforce-with-Postman-Testing/blob/main/images/Postman_Get.gif)
 
-GET method is a frequently used method in the HTTP protocol. Its function is to retrieve a specified resource. A GET request is generally used to retrieve data from the server and does not contain a request body. Instead, a URI (Uniform Resource Identifier) is sent that identifies the requested resource.
+**GET** method is a frequently used method in the **HTTP** protocol. Its function is to retrieve a specified resource. A GET request is generally used to retrieve data from the server and does not contain a request body. Instead, a URI (Uniform Resource Identifier) is sent that identifies the requested resource.
 
 •	Get method only retrieve data.
 
